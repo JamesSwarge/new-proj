@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 26px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cust-sec {
+    padding: 70px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.bttn {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 16px 26px !important;
+    border-radius: 6px !important;
+    -webkit-border-radius: 6px !important;
+    -moz-border-radius: 6px !important;
+    -ms-border-radius: 6px !important;
+    -o-border-radius: 6px !important;
+}
+.bttn.bttn-primary {
+    background-color: #3A00FF !important;
+    color: #FFFFFF !important;
+}
+.bttn.bttn-primary:focus {
+    box-shadow: none !important;
+}
+.bttn.bttn-rounded {
+    border-radius: 50px !important;
+    -webkit-border-radius: 50px !important;
+    -moz-border-radius: 50px !important;
+    -ms-border-radius: 50px !important;
+    -o-border-radius: 50px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bttn.bttn-primary.bttn-outline {
+    background-color: #FFFFFF !important;
+    color: #3A00FF !important;
+    border: 1px solid #3A00FF;
 }
 
-.App-link {
-  color: #61dafb;
+.bttn.bttn-primary.bttn-outline:focus,
+.bttn.bttn-primary.bttn-outline:hover,
+.bttn.bttn-primary.bttn-outline:active {
+    background-color: #3A00FF !important;
+    color: #FFFFFF !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.st {
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+
+
+@media (min-width: 1600px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1400px !important;
+    }
 }
