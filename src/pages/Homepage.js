@@ -14,7 +14,7 @@ function Homepage() {
                         </div>
                         <div className="col-lg-6 order-1 align-self-center">
                             <div className="custom-carousel-img-wrap">
-                                <img className="custom-carousel-img img-fluid" src="../assets/images/rocket.png" />
+                                <img className="custom-carousel-img img-fluid" src="assets/images/rocket.png" />
                             </div>
                         </div>
                     </div>
