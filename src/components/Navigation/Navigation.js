@@ -32,8 +32,18 @@ function Navigation(props) {
                     <Nav className="mx-auto">
                     <Nav.Link href="#home" className="header-links">Vaults</Nav.Link>
                     <Nav.Link href="#link" className="header-links">Buy Fast</Nav.Link>
-                    <Nav.Link href="#link" className="header-links">Dashboard</Nav.Link>
+                    <Nav.Link href="#link" className="header-links">Dashboard</Nav.Link>                    
                     </Nav>
+                    <ul className="top-menu-ul show-mob-only">
+                        <li className="top-menu-li top-menu-ttl">Learn More</li>
+                        <li className="top-menu-li"><a href="">Audit</a></li>
+                        <li className="top-menu-li"><a href="">Contract</a></li>
+                        <li className="top-menu-li"><a href="">Wiki</a></li>
+                    </ul>
+                    <ul className="top-menu-ul show-mob-only">
+                        <li className="top-menu-li top-menu-ttl">Contact US</li>
+                        <li className="top-menu-li"><a href="mailto:contact@fastyield.app">contact@fastyield.app</a></li>
+                    </ul>                    
                     <div className="rt-menu-wrap">
                         <div className="custom-toggle-switch">
                             <input type="checkbox" id="toggle_checkbox" />
