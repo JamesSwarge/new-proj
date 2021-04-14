@@ -5,6 +5,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import { NavDropdown, Nav, DropdownButton, Dropdown } from "react-bootstrap";
 
 import styled from "styled-components";
+import { CgSun } from "react-icons/cg";
+import { HiMoon } from "react-icons/hi";
 
 function Navigation(props) {
 
@@ -17,6 +19,8 @@ function Navigation(props) {
             props.setLogo("logo_1");
         }
     };
+
+    const icon = props.theme === "light" ? <CgSun /> : <HiMoon />;
 
     return (
         <>
@@ -48,11 +52,12 @@ function Navigation(props) {
                         <div className="custom-toggle-switch">
                             <input type="checkbox" id="toggle_checkbox" />
                             <label for="toggle_checkbox" onClick={changeTheme}>
-                            <div id="star">
-                                <div class="star" id="star-1">★</div>
-                                <div class="star" id="star-2">★</div>
-                            </div>
-                            <div id="moon"></div>
+                                {/* <div id="star">
+                                    <div class="star" id="star-1">★</div>
+                                    <div class="star" id="star-2">★</div>
+                                </div>
+                                <div id="moon"></div> */}
+                                <div className="toggle-icon">{icon}</div>                                
                             </label>
                         </div>
                         {/* <button onClick={() => props.changeWord('james')} className="btn bttn bttn-primary bttn-rounded">connect wallet</button> */}

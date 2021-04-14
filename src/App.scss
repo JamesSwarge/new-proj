@@ -206,96 +206,103 @@ h3, .h3 {
     align-self: center;
     max-height: 40px;
     margin: auto 27px;
+    #toggle_checkbox {
+        display: none;
+    }    
+    label {
+        position: relative;
+        width: 90px;
+        height: 40px;
+        margin: 0 auto;
+        background-color: #FFFDF2;
+        border: 1px solid #E0A818;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 56px;
+        -webkit-border-radius: 56px;
+        -moz-border-radius: 56px;
+        -ms-border-radius: 56px;
+        -o-border-radius: 56px;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        transition: 0.3s ease background-color;
+        -webkit-transition: 0.3s ease background-color;
+        -moz-transition: 0.3s ease background-color;
+        -ms-transition: 0.3s ease background-color;
+        -o-transition: 0.3s ease background-color;
+        .toggle-icon {
+            position: relative;
+            color: #E0A818;
+            height: 100%;
+            padding: 5px 12px;
+            svg {
+                height: 24px;
+                width: auto;
+                position: absolute;
+                top: 50%;
+                left: 12px;
+                right: auto;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transition: all .2s ease-in-out;
+                -webkit-transition: all .2s ease-in-out;
+                -moz-transition: all .2s ease-in-out;
+                -ms-transition: all .2s ease-in-out;
+                -o-transition: all .2s ease-in-out;
+            }
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            height: 24px;
+            width: 24px;
+            top: 50%;
+            left: auto;
+            right: 8px;
+            background: #FFFFFF;
+            border: 1px solid #E0A818;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transition: all .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -ms-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+        }
+    }
+    #toggle_checkbox:checked + label {
+        background-color: #11191d;
+        border: 1px solid #21dbc1;
+        .toggle-icon {
+            color: #21DBC1;
+            svg {
+                left: auto;
+                right: 12px;
+            }
+        }
+        &::before {
+            left: 8px;
+            right: auto;
+            background: #21dbc1;
+            border: 1px solid #21dbc1;
+        }
+    }
 }
-.custom-toggle-switch #toggle_checkbox {
-    display: none;
-}
-.custom-toggle-switch label {
-    position: relative;
-    width: 88px;
-    height: 40px;
-    margin: 0 auto;
-    background-color: #FFFDF2;
-    border: 1px solid #E0A818;
-    border-radius: 56px;
-    transform: translateY(0%);
-    cursor: pointer;
-    transition: 0.3s ease background-color;
-    overflow: hidden;
-}
-.custom-toggle-switch #star {
-    position: absolute;
-    top: 50%;
-    left: 18px;
-    width: 16px;
-    height: 16px;
-    background-color: #E0A818;
-    transform: scale(1);
-    border-radius: 50%;
-    transition: 0.3s ease top, 0.3s ease left, 0.3s ease transform, 0.3s ease background-color;
-    z-index: 1;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-}
-.custom-toggle-switch #star-1 {
-    position: relative;
-}
-.custom-toggle-switch #star-2 {
-    position: absolute;
-    transform: rotateZ(36deg);
-}
-.custom-toggle-switch .star {
-    top: -8px;
-    left: -5px;
-    font-size: 31px;
-    line-height: 28px;
-    color: #E0A818;
-    transition: 0.3s ease color;
-}
-.custom-toggle-switch #moon {
-    position: absolute;
-    bottom: -52px;
-    right: 22px;
-    width: 30px;
-    height: 24px;
-    background-color: #fff;
-    border-radius: 50%;
-    transition: 0.3s ease bottom;
-}
-.custom-toggle-switch #moon:before {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: -21px;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    border-radius: 50%;
-    transition: 0.3s ease background-color;
-}
-.custom-toggle-switch #toggle_checkbox:checked + label {
-    background-color: #11191d;
-    border: 1px solid #21dbc1;
-}
-.custom-toggle-switch #toggle_checkbox:checked + label #star {
-    top: 3px;
-    left: 36px;
-    transform: scale(0.3);
-    background-color: #E0A818;
-}
-.custom-toggle-switch #toggle_checkbox:checked + label .star {
-    color: #E0A818;
-}
-.custom-toggle-switch #toggle_checkbox:checked + label #moon {
-    bottom: 8px;
-}
-.custom-toggle-switch #toggle_checkbox:checked + label #moon:before {
-    background-color: #11191d;
-}
-
 
 
 /* Carousel CSS */
@@ -460,23 +467,8 @@ h3, .h3 {
     .custom-toggle-switch {
         max-height: 33px;
         label {
-            width: 72px;
-            height: 33px;
-        }
-        #moon {
-            right: 15px;
-            width: 26px;
-            height: 21px;
-            top: 4px;
-            &::before {
-                left: -21px;
-                width: 38px;
-                height: 36px;
-            }
-        }
-        #toggle_checkbox:checked + label #star {
-            top: 2px;
-            left: 31px;
+            width: 88px;
+            height: 38px;
         }
     }
 
@@ -591,14 +583,13 @@ h3, .h3 {
         font-size: 12px;
     }
     .custom-toggle-switch {
-        max-height: 33px;
-        transform: scale(0.7);
-        -webkit-transform: scale(0.7);
-        -moz-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-        -o-transform: scale(0.7);
-        margin: auto 5px;
-    }
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        margin: auto 15px;
+}
 
     /* carousel */
     .carousel .carousel-inner .carousel-item .custom-carousel .custom-carousel-cta-wrap {
@@ -760,7 +751,13 @@ h3, .h3 {
     .custom-toggle-switch {
         position: absolute;
         top: 30px;
-        left: 6vw;
+        left: 5px;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        max-height: unset;
     }
     .navbar-expand-lg .navbar-nav .nav-link.header-links {
         font-size: 12px;
