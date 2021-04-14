@@ -1,6 +1,6 @@
 import React from 'react'
 import './Homepage.css';
-import CustomCarousel from '../components/CustomCarousel';
+import CustomCarousel from '../components/CustomCarousel/CustomCarousel';
 
 function Homepage() {
     return (

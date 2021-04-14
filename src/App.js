@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import Navigation from './components/Navigation';
-import Footer from './components/Footer';
+import Navigation from './components/Navigation/Navigation';
+import Footer from './components/Footer/Footer';
 import Homepage from './pages/Homepage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
