@@ -1,5 +1,5 @@
 import React from 'react'
-import './Footer.css';
+import './Footer.scss';
 
 function Footer() {
     return (
@@ -7,14 +7,14 @@ function Footer() {
             <footer className="main-footer">
                 <div className="container">
                     <div className="footer-wrapper">
-                        <div className="row">
-                            <div className="col-md-4">
+                        <div className="row justify-content-center">
+                            <div className="col-lg-4 col-md-6">
                                 <div className="footer-widget">
                                     <h4>Contact Us</h4>
                                     <a className="email-link" href="mailto:contact@fastyield.app">contact@fastyield.app</a>
                                 </div>
                             </div>
-                            <div className="col-md-4">
+                            <div className="col-lg-4 col-md-6">
                                 <div className="footer-widget">
                                     <h4>Learn More</h4>
                                     <ul className="nav footer-link">
@@ -30,8 +30,8 @@ function Footer() {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-md-4">
-                                <div className="footer-widget">
+                            <div className="col-lg-4 col-md-6">
+                                <div className="footer-widget mb-0">
                                     <h4>Join Community</h4>
                                     <ul className="nav footer-social-link">
                                         <li className="nav-item">
