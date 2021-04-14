@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/new-proj/static/css/main.9fafb843.chunk.css",
-    "main.js": "/new-proj/static/js/main.accc304e.chunk.js",
-    "main.js.map": "/new-proj/static/js/main.accc304e.chunk.js.map",
-    "runtime-main.js": "/new-proj/static/js/runtime-main.7f58499f.js",
-    "runtime-main.js.map": "/new-proj/static/js/runtime-main.7f58499f.js.map",
+    "main.css": "/new-proj/static/css/main.4ab0119e.chunk.css",
+    "main.js": "/new-proj/static/js/main.ff0314c1.chunk.js",
+    "main.js.map": "/new-proj/static/js/main.ff0314c1.chunk.js.map",
+    "runtime-main.js": "/new-proj/static/js/runtime-main.db576439.js",
+    "runtime-main.js.map": "/new-proj/static/js/runtime-main.db576439.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/new-proj/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.f64ff99c.chunk.js": "/new-proj/static/js/2.f64ff99c.chunk.js",
-    "static/js/2.f64ff99c.chunk.js.map": "/new-proj/static/js/2.f64ff99c.chunk.js.map",
-    "static/js/3.2825209d.chunk.js": "/new-proj/static/js/3.2825209d.chunk.js",
-    "static/js/3.2825209d.chunk.js.map": "/new-proj/static/js/3.2825209d.chunk.js.map",
+    "static/js/2.2b0ce354.chunk.js": "/new-proj/static/js/2.2b0ce354.chunk.js",
+    "static/js/2.2b0ce354.chunk.js.map": "/new-proj/static/js/2.2b0ce354.chunk.js.map",
+    "static/js/3.b5f72cbc.chunk.js": "/new-proj/static/js/3.b5f72cbc.chunk.js",
+    "static/js/3.b5f72cbc.chunk.js.map": "/new-proj/static/js/3.b5f72cbc.chunk.js.map",
     "index.html": "/new-proj/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/new-proj/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.9fafb843.chunk.css.map": "/new-proj/static/css/main.9fafb843.chunk.css.map",
-    "static/js/2.f64ff99c.chunk.js.LICENSE.txt": "/new-proj/static/js/2.f64ff99c.chunk.js.LICENSE.txt",
+    "static/css/main.4ab0119e.chunk.css.map": "/new-proj/static/css/main.4ab0119e.chunk.css.map",
+    "static/js/2.2b0ce354.chunk.js.LICENSE.txt": "/new-proj/static/js/2.2b0ce354.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/new-proj/static/media/bg-frame-light.e6e7d801.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7f58499f.js",
+    "static/js/runtime-main.db576439.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.f64ff99c.chunk.js",
-    "static/css/main.9fafb843.chunk.css",
-    "static/js/main.accc304e.chunk.js"
+    "static/js/2.2b0ce354.chunk.js",
+    "static/css/main.4ab0119e.chunk.css",
+    "static/js/main.ff0314c1.chunk.js"
   ]
 }
